@@ -1,0 +1,16 @@
+<a routerLink="/music/list">List Musics</a>
+<div>
+    <label for="name">Name: </label>
+    <input [(ngModel)]="name" type="text" name="name" ngModel>
+</div>
+<div>
+    <label for="author">Author: </label>
+    <input [(ngModel)]="author" type="text" name="author">
+</div>
+<div>
+    <label for="duration">Duration: </label>
+    <input [(ngModel)]="duration" type="text" name="duration">
+</div>
+<div id="buttonRegister">
+    <button (click)="create()">Register</button>
+</div>

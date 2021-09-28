@@ -1,0 +1,19 @@
+<a routerLink="/music/create">Register New Song</a>
+<br>
+<ul>
+    <li *ngFor="let music of musics">
+        <h3>{{ music.id }}</h3>
+        <p>
+            {{  music.name }}
+        </p>
+        <p>
+            {{ music.author }}
+        </p>
+        <p>
+            {{ music.duration }}
+        </p>
+        <p>
+            {{ music.createdAt }}
+        </p>
+    </li>
+</ul>
